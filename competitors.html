@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatekeeperHQ Competitive Analysis - Partner Ecosystem Focus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-green: #34d399;
+            --brand-cyan: #22d3ee;
+            --brand-gradient: linear-gradient(135deg, #6d28d9, #2563eb);
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --dark-bg: #0a101f;
+            --dark-card: #111827;
+            --dark-border: #374151;
+            --dark-purple-accent: #1e1b4b;
+            --dark-blue-accent: #1e3a8a;
+            --off-black: #0c0c0c;
+            --light-grey-text: #e2e8f0;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--dark-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--dark-card);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            border: 1px solid var(--dark-border);
+        }
+
+        .header {
+            background-image: var(--brand-gradient);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            color: var(--light-grey-text);
+        }
+        
+        .ecosystem-message {
+            background: var(--dark-purple-accent);
+            color: var(--light-grey-text);
+            padding: 25px 40px;
+            margin: 30px;
+            border-radius: 15px;
+            border: 1px solid var(--dark-border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .ecosystem-message h2 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            color: var(--brand-cyan);
+        }
+
+        .ecosystem-message p {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        
+        .ecosystem-message strong {
+            color: var(--text-primary);
+        }
+        
+        .category-header {
+            background-image: var(--brand-gradient);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 30px 30px 0 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .category-header.partner {
+            background: linear-gradient(135deg, #166534, #15803d); /* Dark green gradient */
+            color: var(--brand-green);
+        }
+        
+        .category-header.compete {
+            background: linear-gradient(135deg, #9f1239, #be123c); /* Dark red gradient */
+            color: #fecdd3;
+        }
+        
+        .category-header.notable {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af); /* Dark blue gradient */
+            color: #bfdbfe;
+        }
+
+        .sponsor-badge {
+            background: rgba(0,0,0,0.3);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--light-grey-text);
+        }
+
+        .sponsor-badge.platinum { background: #e5e5e5; color: #1a1a1a; border: 2px solid #9ca3af; }
+        .sponsor-badge.gold { background: #fbbf24; color: #1a1a1a; border: 2px solid #d97706; }
+        .sponsor-badge.silver { background: #d1d5db; color: #1a1a1a; border: 2px solid #6b7280; }
+        .sponsor-badge.built-for { background: #818cf8; color: white; border: 2px solid #4f46e5; }
+
+        .sponsor-indicator {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            margin-left: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .sponsor-indicator.platinum { background: #e5e5e5; color: #1a1a1a; }
+        .sponsor-indicator.gold { background: #fbbf24; color: #1a1a1a; }
+        .sponsor-indicator.silver { background: #d1d5db; color: #1a1a1a; }
+        .sponsor-indicator.built-for { background: #818cf8; color: white; }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            padding: 0 30px 30px 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--dark-card);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-radius: 0 0 10px 10px;
+            overflow: hidden;
+        }
+
+        thead { background: var(--off-black); }
+
+        th {
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid var(--dark-border);
+        }
+
+        th:first-child { width: 18%; }
+        th:nth-child(2) { width: 27%; }
+        th:nth-child(3) { width: 27%; }
+        th:nth-child(4) { width: 28%; background: var(--dark-purple-accent); color: var(--brand-cyan); text-align: center; }
+
+        .partner-column { background: #166534 !important; color: var(--brand-green) !important; }
+
+        tbody tr { transition: all 0.3s ease; }
+        tbody tr:hover { background: var(--off-black); transform: scale(1.01); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        tbody tr.partner-row { background: rgba(52, 211, 153, 0.05); }
+        tbody tr:not(:last-child) { border-bottom: 1px solid var(--dark-border); }
+
+        td { padding: 18px 20px; color: var(--text-secondary); font-size: 0.95em; line-height: 1.6; vertical-align: top; }
+        td:first-child { font-weight: 700; color: var(--text-primary); font-size: 1.05em; }
+
+        .partner-indicator {
+            background: var(--brand-green);
+            color: var(--off-black);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            margin-left: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        td:last-child {
+            background: rgba(109, 40, 217, 0.1);
+            color: #a78bfa;
+            font-weight: 600;
+            border-left: 3px solid var(--dark-purple-accent);
+        }
+
+        .partner-synergy {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--brand-green);
+            border-left: 3px solid #166534;
+        }
+
+        .strength-item, .gap-item, .synergy-item, .diff-item {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .strength-item:before { content: "✓"; position: absolute; left: 0; color: #48bb78; font-weight: bold; }
+        .gap-item:before { content: "✗"; position: absolute; left: 0; color: #f56565; font-weight: bold; }
+        .synergy-item:before { content: "🤝"; position: absolute; left: 0; }
+        .diff-item:before { content: "★"; position: absolute; left: 0; color: var(--brand-cyan); font-weight: bold; }
+
+        .legend {
+            padding: 20px 40px 30px;
+            background: var(--off-black);
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.95em; color: var(--text-secondary); }
+        .legend-icon { font-weight: bold; font-size: 1.2em; }
+        
+        @media (max-width: 1200px) {
+            .table-wrapper { overflow-x: scroll; }
+            table { min-width: 900px; }
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header h1 { font-size: 1.8em; }
+            .ecosystem-message { margin: 15px; padding: 20px; }
+            .ecosystem-message h2 { font-size: 1.3em; }
+            .category-header { font-size: 1.1em; margin: 15px 15px 0 15px; }
+            .table-wrapper { padding: 0 15px 15px 15px; }
+            th, td { padding: 12px 15px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GatekeeperHQ: Building the Complete NetSuite Ecosystem</h1>
+            <p>SuiteWorld 2025 Sponsor Analysis & Partnership Strategy</p>
+        </div>
+        
+        <div class="ecosystem-message">
+            <h2>🤝 Our Partnership Philosophy</h2>
+            <p><strong>GatekeeperHQ completes the NetSuite ecosystem by providing the critical risk, contract, and compliance intelligence layer that leading financial automation providers don't offer.</strong> We partner with best-in-class solutions to create a comprehensive platform where each solution excels in its domain. Together, we deliver the complete source-to-pay ecosystem that NetSuite customers need for modern vendor management.</p>
+        </div>
+        
+        <div class="category-section">
+            <div class="category-header partner">
+                STRATEGIC PARTNERS - SuiteWorld 2025 Sponsors
+                <span class="sponsor-badge">ECOSYSTEM BUILDERS</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Partner</th>
+                            <th>Their Excellence</th>
+                            <th>What They Don't Provide</th>
+                            <th class="partner-column">How Gatekeeper Completes the Picture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="partner-row">
+                            <td>Tipalti <span class="partner-indicator">PARTNER</span> <span class="sponsor-indicator silver">SILVER</span></td>
+                            <td>
+                                <div class="strength-item">NetSuite 2024 Growth Partner of Year</div>
+                                <div class="strength-item">World-class AP automation</div>
+                                <div class="strength-item">Global payment capabilities</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Pre-payment vendor screening</div>
+                                <div class="gap-item">Contract lifecycle management</div>
+                                <div class="gap-item">Comprehensive risk assessment</div>
+                            </td>
+                            <td class="partner-synergy">
+                                <div class="synergy-item">Add upfront vendor risk screening</div>
+                                <div class="synergy-item">Connect contracts to payments</div>
+                                <div class="synergy-item">Monitor vendor compliance</div>
+                            </td>
+                        </tr>
+                        <tr class="partner-row">
+                            <td>Airbase <span class="partner-indicator">PARTNER</span> <span class="sponsor-indicator silver">SILVER</span></td>
+                            <td>
+                                <div class="strength-item">Excellent spend management</div>
+                                <div class="strength-item">Corporate card integration</div>
+                                <div class="strength-item">Automated approval workflows</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Vendor risk assessment</div>
+                                <div class="gap-item">Contract management</div>
+                                <div class="gap-item">Compliance monitoring</div>
+                            </td>
+                            <td class="partner-synergy">
+                                <div class="synergy-item">Add risk-aware spending decisions</div>
+                                <div class="synergy-item">Link spend to contract terms</div>
+                                <div class="synergy-item">Ensure secure vendor relationships</div>
+                            </td>
+                        </tr>
+                        <tr class="partner-row">
+                            <td>Zone & Co <span class="partner-indicator">PARTNER</span> <span class="sponsor-indicator platinum">PLATINUM</span></td>
+                            <td>
+                                <div class="strength-item">Platinum sponsor status</div>
+                                <div class="strength-item">Advanced financial automation</div>
+                                <div class="strength-item">Quote-to-cash expertise</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Vendor management capabilities</div>
+                                <div class="gap-item">Risk assessment tools</div>
+                                <div class="gap-item">Contract lifecycle features</div>
+                            </td>
+                            <td class="partner-synergy">
+                                <div class="synergy-item">Add vendor lifecycle management</div>
+                                <div class="synergy-item">Provide contract intelligence</div>
+                                <div class="synergy-item">Enable risk-aware decisions</div>
+                            </td>
+                        </tr>
+                        <tr class="partner-row">
+                            <td>Vertex <span class="partner-indicator">PARTNER</span> <span class="sponsor-indicator gold">GOLD</span></td>
+                            <td>
+                                <div class="strength-item">Tax compliance leadership</div>
+                                <div class="strength-item">Deep NetSuite integration</div>
+                                <div class="strength-item">Global tax coverage</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Vendor risk management</div>
+                                <div class="gap-item">Contract management</div>
+                                <div class="gap-item">Non-tax compliance</div>
+                            </td>
+                            <td class="partner-synergy">
+                                <div class="synergy-item">Extend compliance beyond tax</div>
+                                <div class="synergy-item">Add vendor risk dimensions</div>
+                                <div class="synergy-item">Manage contract compliance</div>
+                            </td>
+                        </tr>
+                        <tr class="partner-row">
+                            <td>Avalara <span class="partner-indicator">PARTNER</span> <span class="sponsor-indicator silver">SILVER</span></td>
+                            <td>
+                                <div class="strength-item">43,000+ customers globally</div>
+                                <div class="strength-item">1,200+ integrations</div>
+                                <div class="strength-item">Real-time tax compliance</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Vendor lifecycle management</div>
+                                <div class="gap-item">Risk assessment capabilities</div>
+                                <div class="gap-item">Contract management</div>
+                            </td>
+                            <td class="partner-synergy">
+                                <div class="synergy-item">Complete vendor management</div>
+                                <div class="synergy-item">Add risk & compliance layers</div>
+                                <div class="synergy-item">Enable contract visibility</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <div class="category-header compete">
+                DIRECT COMPETITORS - SuiteWorld 2025 Sponsors
+                <span class="sponsor-badge">COMPETITIVE LANDSCAPE</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Competitor</th>
+                            <th>Strengths</th>
+                            <th>Gaps</th>
+                            <th>Gatekeeper Advantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zip <span class="sponsor-indicator built-for">Built for NetSuite</span></td>
+                            <td>
+                                <div class="strength-item">Industry-leading intake management</div>
+                                <div class="strength-item">"Built for NetSuite" verified</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Limited risk assessment</div>
+                                <div class="gap-item">No comprehensive CLM</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">LuminIQ unified intelligence</div>
+                                <div class="diff-item">Complete CLM + TPRM + Spend</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Coupa <span class="sponsor-indicator silver">SILVER</span></td>
+                            <td>
+                                <div class="strength-item">Market leader in BSM</div>
+                                <div class="strength-item">Comprehensive spend management</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Complex implementation</div>
+                                <div class="gap-item">Risk as afterthought</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Risk-first approach</div>
+                                <div class="diff-item">Open partner ecosystem</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Medius <span class="sponsor-indicator gold">GOLD</span></td>
+                            <td>
+                                <div class="strength-item">Gold Sponsor at SuiteWorld</div>
+                                <div class="strength-item">AI-powered AP automation</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Invoice-centric only</div>
+                                <div class="gap-item">No risk management</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Full contracting lifecycle</div>
+                                <div class="diff-item">Upfront vendor screening</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ivalua <span class="sponsor-indicator silver">SILVER</span></td>
+                            <td>
+                                <div class="strength-item">Unified source-to-pay</div>
+                                <div class="strength-item">Strong procurement</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Complex implementation</div>
+                                <div class="gap-item">Closed platform</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Partner-friendly platform</div>
+                                <div class="diff-item">Faster time to value</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NetSuite Native (SuiteProcurement)</td>
+                            <td>
+                                <div class="strength-item">Built into NetSuite ERP</div>
+                                <div class="strength-item">AI-powered Bill Capture</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">No risk assessment</div>
+                                <div class="gap-item">No CLM capabilities</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Complete risk intelligence</div>
+                                <div class="diff-item">Works with partner ecosystem</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <div class="category-header notable">
+                NOT LISTED AS SPONSORS - Key Competitors
+                <span class="sponsor-badge">MARKET OPPORTUNITY</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Market Position</th>
+                            <th>Limitations</th>
+                            <th>Gatekeeper Difference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Icertis</td>
+                            <td>
+                                <div class="strength-item">CLM market leader</div>
+                                <div class="strength-item">30% of Fortune 100</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">CLM-only focus</div>
+                                <div class="gap-item">No partner ecosystem</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Unified platform approach</div>
+                                <div class="diff-item">Risk + Contracts + Spend</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ironclad</td>
+                            <td>
+                                <div class="strength-item">Modern CLM platform</div>
+                                <div class="strength-item">Good user experience</div>
+                            </td>
+                            <td>
+                                <div class="gap-item">Limited procurement features</div>
+                                <div class="gap-item">Minimal risk assessment</div>
+                            </td>
+                            <td>
+                                <div class="diff-item">Complete vendor lifecycle</div>
+                                <div class="diff-item">Risk screening upfront</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item"><span class="legend-icon" style="color: #48bb78;">✓</span> Strengths</div>
+            <div class="legend-item"><span class="legend-icon" style="color: #f56565;">✗</span> Gaps</div>
+            <div class="legend-item"><span class="legend-icon">🤝</span> Partnership Synergy</div>
+            <div class="legend-item"><span class="legend-icon" style="color: var(--brand-cyan);">★</span> Gatekeeper Advantage</div>
+        </div>
+        
+        <div class="ecosystem-message" style="margin-top: 30px; background-image: var(--brand-gradient);">
+            <h2 style="color: white;">💡 Key Takeaway for NetSuite Customers</h2>
+            <p style="color: white;"><strong style="color: white;">You don't need to choose between best-in-class solutions.</strong> GatekeeperHQ integrates seamlessly with your existing NetSuite ecosystem partners. We provide the missing pieces: comprehensive vendor risk assessment, contract lifecycle management, and continuous compliance monitoring to create a complete, integrated platform.</p>
+        </div>
+    </div>
+</body>
+</html>
