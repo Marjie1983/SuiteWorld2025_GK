@@ -627,3 +627,15 @@ table.sponsor-table {
     color: #f9fafb;
     background-color: #4f46e5;
 }
+/* Styles for Talk Tracks on Battle Card page */
+.talk-track {
+    margin-top: 1rem;
+    border-top: 1px solid var(--dark-border);
+    padding-top: 1rem;
+}
+.talk-track p {
+    margin-bottom: 0.5rem;
+}
+.talk-track strong {
+    color: var(--brand-cyan);
+}
