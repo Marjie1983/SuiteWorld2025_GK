@@ -445,3 +445,17 @@ nav a:hover, nav a.active {
     color: var(--brand-cyan);
     margin-bottom: 0.25rem;
 }
+/* Styles for Soundbites page */
+.soundbite {
+    background-image: var(--brand-gradient);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-left: 5px solid var(--brand-cyan);
+}
