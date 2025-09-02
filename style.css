@@ -652,3 +652,56 @@ table.sponsor-table {
     color: var(--brand-cyan);
     margin-bottom: 0.5rem;
 }
+/* Styles for Accordion Dropdowns on Objections Page */
+.objection-accordion {
+    border: 1px solid var(--dark-border);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    background-color: var(--dark-card);
+    overflow: hidden;
+}
+
+.objection-accordion summary {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: var(--brand-cyan);
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    list-style: none; /* Removes default dropdown arrow */
+}
+
+.objection-accordion summary::-webkit-details-marker {
+    display: none; /* Hides default arrow in Chrome/Safari */
+}
+
+.objection-accordion summary::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    transition: transform 0.2s ease-in-out;
+}
+
+.objection-accordion[open] > summary {
+    background-color: var(--dark-purple-accent);
+}
+
+.objection-accordion[open] > summary::after {
+    content: '−';
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.objection-response {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--light-grey-text);
+    border-top: 1px solid var(--dark-border);
+}
+
+.objection-response strong {
+    color: var(--brand-green);
+}
