@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - Sponsors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://gatekeeperhq.com" target="_blank">Gatekeeper</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">🤝 SuiteWorld Sponsors Analysis</h2>
+            
+            <div class="highlight-box">
+                <h3>Our Partnership Philosophy</h3>
+                <p>Gatekeeper completes the NetSuite ecosystem by providing the critical risk, contract, and compliance intelligence layer that leading financial automation providers don't offer. We partner with best-in-class solutions to deliver the complete source-to-pay ecosystem that NetSuite customers need.</p>
+            </div>
+
+            <h3 class="section-title" style="font-size: 1.8rem; color: var(--brand-green); border-color: var(--brand-green);">Strategic Partners</h3>
+            <div class="table-wrapper">
+                <table class="sponsor-table">
+                    <thead>
+                        <tr>
+                            <th>Partner</th>
+                            <th>Their Excellence</th>
+                            <th>What They Don't Provide</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tipalti</td>
+                            <td><ul><li>NetSuite 2024 Growth Partner</li><li>World-class AP automation</li><li>Global payment capabilities</li></ul></td>
+                            <td><ul><li>Pre-payment vendor screening</li><li>Contract lifecycle management</li><li>Comprehensive risk assessment</li></ul></td>
+                        </tr>
+                        <tr class="gatekeeper-completes">
+                            <td colspan="3"><strong>How Gatekeeper Completes the Picture:</strong> We add upfront vendor risk screening and connect contracts to payments to ensure compliance.</td>
+                        </tr>
+                         <tr>
+                            <td>Airbase</td>
+                            <td><ul><li>Excellent spend management</li><li>Corporate card integration</li><li>Automated approval workflows</li></ul></td>
+                            <td><ul><li>Vendor risk assessment</li><li>Contract management</li><li>Compliance monitoring</li></ul></td>
+                        </tr>
+                        <tr class="gatekeeper-completes">
+                            <td colspan="3"><strong>How Gatekeeper Completes the Picture:</strong> We enable risk-aware spending decisions and link all spend to contract terms.</td>
+                        </tr>
+                         <tr>
+                            <td>Zone & Co</td>
+                            <td><ul><li>Platinum sponsor status</li><li>Advanced financial automation</li><li>Quote-to-cash expertise</li></ul></td>
+                            <td><ul><li>Vendor management capabilities</li><li>Risk assessment tools</li><li>Contract lifecycle features</li></ul></td>
+                        </tr>
+                        <tr class="gatekeeper-completes">
+                            <td colspan="3"><strong>How Gatekeeper Completes the Picture:</strong> We provide the vendor and contract intelligence to enable risk-aware financial decisions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
