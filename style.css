@@ -755,3 +755,21 @@ table.sponsor-table {
     border: none;
     margin: 0;
 }
+/* ... existing code ... */
+.objection-response {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    color: var(--light-grey-text);
+    border-top: 1px solid var(--dark-border);
+}
+
+/* Accordion inside a card on Discovery Page */
+/* ... existing code ... */
+.card-accordion .battlecard-detail {
+    padding-top: 0.5rem;
+    border: none;
+    margin: 0;
+}
+
+.card-accordion[open] .battlecard-detail {
+    padding-top: 1.5rem;
+}
