@@ -67,136 +67,148 @@
         <main class="content-area">
             <h2 class="section-title">🤝 Full Sponsor & Competitor Analysis</h2>
 
-            <h3 class="section-title" style="font-size: 1.8rem; color: var(--brand-green); border-color: var(--brand-green);">Strategic Partners</h3>
-            <div class="table-wrapper">
-                <table class="sponsor-table">
-                    <thead>
-                        <tr>
-                            <th>Partner</th>
-                            <th>Their Excellence</th>
-                            <th>Gaps</th>
-                            <th>Gatekeeper Advantage</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>NetSuite Native</td>
-                            <td><ul><li>Built into NetSuite ERP</li><li>AI-powered Bill Capture</li></ul></td>
-                            <td><ul><li>No risk assessment</li><li>No CLM capabilities</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We add the complete risk and contract intelligence layer.</li><li>Our platform works with the entire partner ecosystem.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Tipalti <span class="badge badge-silver">Silver</span></td>
-                            <td><ul><li>NetSuite 2024 Growth Partner</li><li>World-class AP automation</li></ul></td>
-                            <td><ul><li>Pre-payment vendor screening</li><li>Contract lifecycle management</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We add upfront vendor risk screening and connect contracts to payments.</li></ul></td>
-                        </tr>
-                         <tr>
-                            <td>Airbase <span class="badge badge-silver">Silver</span></td>
-                            <td><ul><li>Excellent spend management</li><li>Corporate card integration</li></ul></td>
-                            <td><ul><li>Vendor risk assessment</li><li>Contract management</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We enable risk-aware spending decisions and link all spend to contract terms.</li></ul></td>
-                        </tr>
-                         <tr>
-                            <td>Zone & Co <span class="badge badge-platinum">Platinum</span></td>
-                            <td><ul><li>Advanced financial automation</li><li>Quote-to-cash expertise</li></ul></td>
-                            <td><ul><li>Vendor management capabilities</li><li>Risk assessment tools</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We provide the vendor and contract intelligence to enable risk-aware financial decisions.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Vertex <span class="badge badge-gold">Gold</span></td>
-                            <td><ul><li>Tax compliance leadership</li><li>Deep NetSuite integration</li></ul></td>
-                            <td><ul><li>Vendor risk management</li><li>Non-tax compliance tracking</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We extend compliance beyond just tax to include security, insurance, etc.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Avalara <span class="badge badge-silver">Silver</span></td>
-                            <td><ul><li>43,000+ customers globally</li><li>1,200+ integrations</li></ul></td>
-                            <td><ul><li>Vendor lifecycle management</li><li>Risk assessment capabilities</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We provide the complete vendor management platform to complement their tax solution.</li></ul></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <h3 class="section-title" style="font-size: 1.8rem; color: var(--danger); border-color: var(--danger);">Direct Competitors (SuiteWorld Sponsors)</h3>
-            <div class="table-wrapper">
-                <table class="sponsor-table">
-                     <thead>
-                        <tr>
-                            <th>Competitor</th>
-                            <th>Their Strengths</th>
-                            <th>Their Gaps</th>
-                            <th>Gatekeeper Difference</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Zip <span class="badge badge-bfn">Built for NetSuite</span></td>
-                            <td><ul><li>Industry-leading intake management</li><li>No-code workflows & AI-powered</li></ul></td>
-                            <td><ul><li>Limited risk assessment</li><li>No comprehensive CLM</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A complete, unified platform for CLM, TPRM, and Spend.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Coupa <span class="badge badge-silver">Silver</span></td>
-                            <td><ul><li>Market leader in BSM</li><li>Comprehensive spend management</li></ul></td>
-                            <td><ul><li>Complex 9-12 month implementation</li><li>Risk is an afterthought</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A risk-first approach with rapid deployment in 6 weeks.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Medius <span class="badge badge-gold">Gold</span></td>
-                            <td><ul><li>AI-powered AP automation</li><li>SuiteApp marketplace presence</li></ul></td>
-                            <td><ul><li>Invoice-centric only</li><li>No pre-signature capabilities</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We manage the full contracting lifecycle, not just invoices.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Ivalua <span class="badge badge-silver">Silver</span></td>
-                            <td><ul><li>Unified source-to-pay</li><li>Strong procurement features</li></ul></td>
-                            <td><ul><li>Complex implementation</li><li>Closed platform model</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>We are a partner-friendly platform with a faster time to value.</li></ul></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('partners', this)">Strategic Partners</button>
+                <button class="tab-button" onclick="showTab('direct-competitors', this)">Direct Competitors</button>
+                <button class="tab-button" onclick="showTab('other-competitors', this)">Key Competitors</button>
             </div>
 
-            <h3 class="section-title" style="font-size: 1.8rem; color: var(--warning); border-color: var(--warning);">Key Competitors (Not Sponsoring)</h3>
-            <div class="table-wrapper">
-                 <table class="sponsor-table">
-                     <thead>
-                        <tr>
-                            <th>Competitor</th>
-                            <th>Market Position</th>
-                            <th>Their Gaps</th>
-                            <th>Gatekeeper Difference</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>DocuSign CLM</td>
-                            <td><ul><li>E-signature market leader</li><li>Strong brand recognition</li></ul></td>
-                            <td><ul><li>Signature-centric approach</li><li>Limited vendor management</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A holistic vendor management platform with a risk-first approach.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>ServiceNow TPRM</td>
-                            <td><ul><li>Enterprise platform</li><li>Strong IT integration</li></ul></td>
-                            <td><ul><li>IT-centric, not finance/procurement</li><li>No contract features</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A business-user friendly platform with integrated CLM and a finance/procurement focus.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>OneTrust</td>
-                            <td><ul><li>Privacy compliance leader</li><li>Comprehensive GRC</li></ul></td>
-                            <td><ul><li>Privacy-first focus</li><li>No contract or spend management</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A procurement-friendly platform with a contract lifecycle focus.</li></ul></td>
-                        </tr>
-                        <tr>
-                            <td>Aravo</td>
-                            <td><ul><li>20+ years TPRM experience</li><li>Deep risk capabilities</li></ul></td>
-                            <td><ul><li>Risk-only focus</li><li>No CLM capabilities</li></ul></td>
-                            <td class="gatekeeper-advantage-col"><ul><li>A unified platform with contract-aware risk and faster time to value.</li></ul></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div id="partners" class="tab-content">
+                <h3 class="section-title" style="font-size: 1.8rem; color: var(--brand-green); border-color: var(--brand-green); margin-top: 1rem;">Strategic Partners</h3>
+                <div class="table-wrapper">
+                    <table class="sponsor-table">
+                        <thead>
+                            <tr>
+                                <th>Partner</th>
+                                <th>Their Excellence</th>
+                                <th>Gaps</th>
+                                <th>Gatekeeper Advantage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NetSuite Native</td>
+                                <td><ul><li>Built into NetSuite ERP</li><li>AI-powered Bill Capture</li></ul></td>
+                                <td><ul><li>No risk assessment</li><li>No CLM capabilities</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We add the complete risk and contract intelligence layer.</li><li>Our platform works with the entire partner ecosystem.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Tipalti <span class="badge badge-silver">Silver</span></td>
+                                <td><ul><li>NetSuite 2024 Growth Partner</li><li>World-class AP automation</li></ul></td>
+                                <td><ul><li>Pre-payment vendor screening</li><li>Contract lifecycle management</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We add upfront vendor risk screening and connect contracts to payments.</li></ul></td>
+                            </tr>
+                             <tr>
+                                <td>Airbase <span class="badge badge-silver">Silver</span></td>
+                                <td><ul><li>Excellent spend management</li><li>Corporate card integration</li></ul></td>
+                                <td><ul><li>Vendor risk assessment</li><li>Contract management</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We enable risk-aware spending decisions and link all spend to contract terms.</li></ul></td>
+                            </tr>
+                             <tr>
+                                <td>Zone & Co <span class="badge badge-platinum">Platinum</span></td>
+                                <td><ul><li>Advanced financial automation</li><li>Quote-to-cash expertise</li></ul></td>
+                                <td><ul><li>Vendor management capabilities</li><li>Risk assessment tools</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We provide the vendor and contract intelligence to enable risk-aware financial decisions.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Vertex <span class="badge badge-gold">Gold</span></td>
+                                <td><ul><li>Tax compliance leadership</li><li>Deep NetSuite integration</li></ul></td>
+                                <td><ul><li>Vendor risk management</li><li>Non-tax compliance tracking</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We extend compliance beyond just tax to include security, insurance, etc.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Avalara <span class="badge badge-silver">Silver</span></td>
+                                <td><ul><li>43,000+ customers globally</li><li>1,200+ integrations</li></ul></td>
+                                <td><ul><li>Vendor lifecycle management</li><li>Risk assessment capabilities</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We provide the complete vendor management platform to complement their tax solution.</li></ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="direct-competitors" class="tab-content">
+                <h3 class="section-title" style="font-size: 1.8rem; color: var(--danger); border-color: var(--danger); margin-top: 1rem;">Direct Competitors (SuiteWorld Sponsors)</h3>
+                <div class="table-wrapper">
+                    <table class="sponsor-table">
+                         <thead>
+                            <tr>
+                                <th>Competitor</th>
+                                <th>Their Strengths</th>
+                                <th>Their Gaps</th>
+                                <th>Gatekeeper Difference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Zip <span class="badge badge-bfn">Built for NetSuite</span></td>
+                                <td><ul><li>Industry-leading intake management</li><li>No-code workflows & AI-powered</li></ul></td>
+                                <td><ul><li>Limited risk assessment</li><li>No comprehensive CLM</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A complete, unified platform for CLM, TPRM, and Spend.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Coupa <span class="badge badge-silver">Silver</span></td>
+                                <td><ul><li>Market leader in BSM</li><li>Comprehensive spend management</li></ul></td>
+                                <td><ul><li>Complex 9-12 month implementation</li><li>Risk is an afterthought</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A risk-first approach, rapid deployment in 6 weeks.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Medius <span class="badge badge-gold">Gold</span></td>
+                                <td><ul><li>AI-powered AP automation</li><li>SuiteApp marketplace presence</li></ul></td>
+                                <td><ul><li>Invoice-centric only</li><li>No pre-signature capabilities</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We manage the full contracting lifecycle, not just invoices.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Ivalua <span class="badge badge-silver">Silver</span></td>
+                                <td><ul><li>Unified source-to-pay</li><li>Strong procurement features</li></ul></td>
+                                <td><ul><li>Complex implementation</li><li>Closed platform model</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>We are a partner-friendly platform with a faster time to value.</li></ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="other-competitors" class="tab-content">
+                <h3 class="section-title" style="font-size: 1.8rem; color: var(--warning); border-color: var(--warning); margin-top: 1rem;">Key Competitors (Not Sponsoring)</h3>
+                <div class="table-wrapper">
+                     <table class="sponsor-table">
+                         <thead>
+                            <tr>
+                                <th>Competitor</th>
+                                <th>Market Position</th>
+                                <th>Their Gaps</th>
+                                <th>Gatekeeper Difference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DocuSign CLM</td>
+                                <td><ul><li>E-signature market leader</li><li>Strong brand recognition</li></ul></td>
+                                <td><ul><li>Signature-centric approach</li><li>Limited vendor management</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A holistic vendor management platform with a risk-first approach.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>ServiceNow TPRM</td>
+                                <td><ul><li>Enterprise platform</li><li>Strong IT integration</li></ul></td>
+                                <td><ul><li>IT-centric, not finance/procurement</li><li>No contract features</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A business-user friendly platform with integrated CLM and a finance/procurement focus.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>OneTrust</td>
+                                <td><ul><li>Privacy compliance leader</li><li>Comprehensive GRC</li></ul></td>
+                                <td><ul><li>Privacy-first focus</li><li>No contract or spend management</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A procurement-friendly platform with a contract lifecycle focus.</li></ul></td>
+                            </tr>
+                            <tr>
+                                <td>Aravo</td>
+                                <td><ul><li>20+ years TPRM experience</li><li>Deep risk capabilities</li></ul></td>
+                                <td><ul><li>Risk-only focus</li><li>No CLM capabilities</li></ul></td>
+                                <td class="gatekeeper-advantage-col"><ul><li>A unified platform with contract-aware risk and faster time to value.</li></ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </main>
