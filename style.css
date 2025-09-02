@@ -639,3 +639,14 @@ table.sponsor-table {
 .talk-track strong {
     color: var(--brand-cyan);
 }
+/* Styles for detailed battlecard sections */
+.battlecard-detail {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--dark-border);
+}
+
+.battlecard-detail h4 {
+    color: var(--brand-cyan);
+    margin-bottom: 0.5rem;
+}
