@@ -327,3 +327,21 @@ nav a:hover, nav a.active {
 .tab-content.active {
     display: block;
 }
+/* Styles for Objection Handler boxes */
+.objection-handler {
+    background: var(--dark-blue-accent);
+    border-left: 5px solid var(--warning);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.objection-handler h4 {
+    color: var(--warning);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.objection-handler p {
+    color: var(--light-grey-text);
+}
