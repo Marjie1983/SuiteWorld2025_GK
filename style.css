@@ -714,3 +714,44 @@ table.sponsor-table {
     margin-top: -0.5rem;
     margin-bottom: 1rem;
 }
+/* Accordion inside a card on Discovery Page */
+.card-accordion {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--dark-border);
+}
+
+.card-accordion summary {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--brand-cyan);
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    list-style: none; /* Removes default arrow */
+    position: relative;
+    outline: none;
+}
+
+.card-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.card-accordion summary::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-accordion[open] > summary::after {
+    content: '−';
+}
+
+.card-accordion .battlecard-detail {
+    padding-top: 0.5rem;
+    border: none;
+    margin: 0;
+}
