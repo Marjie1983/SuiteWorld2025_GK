@@ -12,10 +12,10 @@
 <body>
     <div class="app-container">
         <header>
-           <div class="branding-bar">
-    <div class="logo"><a href="https://www.gatekeeperhq.com/suiteworld-2025" target="_blank">Gatekeeper X SuiteWorld 2025</a></div>
-    <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
-</div>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://www.gatekeeperhq.com/suiteworld-2025" target="_blank">Gatekeeper X SuiteWorld 2025</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
             <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
             <p>Interactive Sales Guide | Ecosystem Edition</p>
         </header>
@@ -24,76 +24,128 @@
             ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
         </div>
 
-<nav>
-    <ul>
-        <li class="nav-item"><a href="index.html">What's New</a></li>
-        <li class="nav-item">
-            <a href="#">Essentials ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="quick-start.html">⚡ Quick Start</a></li>
-                <li><a href="quick-reference.html">📋 Quick Reference</a></li>
-                <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
-                <li><a href="messaging.html">📢 Core Messaging</a></li>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Essentials ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quick-start.html">⚡ Quick Start</a></li>
+                        <li><a href="quick-reference.html">📋 Quick Reference</a></li>
+                        <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
+                        <li><a href="messaging.html">📢 Core Messaging</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#" class="active">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                        <li><a href="soundbites.html">💡 Key Soundbites</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Competitors ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
+                        <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                        <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        <li class="nav-item"><a href="personas.html">Personas</a></li>
-        <li class="nav-item">
-            <a href="#">Conversations ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="pitches.html">💬 Elevator Pitches</a></li>
-                <li><a href="objections.html">🛡️ Objection Handlers</a></li>
-                <li><a href="discovery.html">🔍 Discovery Questions</a></li>
-                <li><a href="soundbites.html">💡 Key Soundbites</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Competitors ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
-                <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Demos & Value ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="demos.html">🎬 Demo Flows</a></li>
-                <li><a href="value.html">💰 Value & ROI</a></li>
-                <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+        </nav>
         
         <main class="content-area">
             <h2 class="section-title">🔍 Discovery Questions</h2>
 
-            <div class="card">
-                <h3 class="card-title">🎯 Opening Discovery (For All Personas)</h3>
-                <div class="discovery-question">"What's your current vendor management tech stack?"</div>
-                <div class="discovery-question">"How well do those systems talk to each other?"</div>
-                <div class="discovery-question">"Where do you spend the most time on manual data reconciliation?"</div>
-                <div class="discovery-question">"If your payment system could see contract terms before paying an invoice, what would that prevent?"</div>
-                <div class="discovery-question">"If your spend management tool knew a vendor's risk score, how would that change your approval process?"</div>
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('general', this)">General</button>
+                <button class="tab-button" onclick="showTab('admins', this)">NetSuite Admins</button>
+                <button class="tab-button" onclick="showTab('finance', this)">Finance</button>
+                <button class="tab-button" onclick="showTab('procurement', this)">Procurement</button>
+                <button class="tab-button" onclick="showTab('risk', this)">Risk/Compliance</button>
+                <button class="tab-button" onclick="showTab('legal', this)">Legal</button>
             </div>
 
-            <div class="card">
-                <h3 class="card-title">Persona-Specific Discovery Questions</h3>
-                <h4>👨‍💼 For NetSuite Admins:</h4>
-                <div class="discovery-question">"How many custom fields have you had to create just to track basic vendor compliance?"</div>
-                
-                <h4 style="margin-top: 1.5rem;">💰 For Finance:</h4>
-                <div class="discovery-question">"Can NetSuite's Bill Capture tell you if an invoice's charges exceed the rates you negotiated in the contract?"</div>
-                
-                <h4 style="margin-top: 1.5rem;">🛍️ For Procurement:</h4>
-                <div class="discovery-question">"Does SuiteProcurement automatically check a vendor's risk and compliance status before a purchase order can be created?"</div>
+            <div id="general" class="tab-content card">
+                <h3 class="card-title">General Discovery</h3>
+                <div class="battlecard-detail">
+                    <h4>Opening Questions</h4>
+                    <div class="discovery-question">"What vendor-related fire drill pulled you away from strategic work this week?"</div>
+                    <div class="discovery-question">"If you could see one thing about a vendor before approving any transaction, what would it be?"</div>
+                    <div class="discovery-question">"What's the most expensive vendor surprise you've had in the last 12 months?"</div>
+                    <div class="discovery-question">"How do you know if you're paying two different vendors for the same service?"</div>
+                </div>
+                <div class="battlecard-detail">
+                    <h4>Situational/Trigger Discovery</h4>
+                     <ul>
+                        <li><strong>For Recent M&A:</strong> "How are you handling vendor consolidation post-merger?"</li>
+                        <li><strong>For Rapid Growth:</strong> "Your vendor count doubled last year - how has your management process scaled?"</li>
+                        <li><strong>For Audit Preparation:</strong> "What vendor documentation are the auditors asking for that's hard to produce?"</li>
+                        <li><strong>For Cost Cutting Initiatives:</strong> "If you had to cut vendor spend by 20% tomorrow, how would you identify where?"</li>
+                    </ul>
+                </div>
+                 <div class="battlecard-detail">
+                    <h4>💡 Power Questions for Champions</h4>
+                     <div class="discovery-question">"Who else needs to be convinced this is a problem worth solving?"</div>
+                    <div class="discovery-question">"If you do nothing, what happens?"</div>
+                </div>
+            </div>
 
-                <h4 style="margin-top: 1.5rem;">🛡️ For Risk/Compliance:</h4>
-                <div class="discovery-question">"How do you currently stop a high-risk vendor from being added to SuiteProcurement in the first place?"</div>
-                
-                <h4 style="margin-top: 1.5rem;">⚖️ For Legal:</h4>
-                <div class="discovery-question">"How do your purchase orders in SuiteProcurement currently reference the specific terms and conditions of the master contract?"</div>
+            <div id="admins" class="tab-content card">
+                <h3 class="card-title">For NetSuite Admins</h3>
+                <div class="discovery-question">"How many custom fields did you create to track vendor compliance?"</div>
+                <div class="discovery-question">"How many hours per week does your team spend on vendor data hygiene?"</div>
+                <div class="discovery-question">"What happens when Legal needs contract data that's not in NetSuite?"</div>
+                <div class="discovery-question">"How do you handle vendor onboarding when different departments have different requirements?"</div>
+                <div class="discovery-question">"What vendor data do you wish NetSuite had that it doesn't?"</div>
+            </div>
+
+            <div id="finance" class="tab-content card">
+                <h3 class="card-title">For Finance</h3>
+                <div class="discovery-question">"Can Bill Capture tell you if charges exceed contract rates?"</div>
+                <div class="discovery-question">"How often do you pay for something only to find out later the contract had already expired?"</div>
+                <div class="discovery-question">"What percentage of your vendor spend is with companies you've never risk-assessed?"</div>
+                <div class="discovery-question">"How do you currently track spend against contract commitments or volume discounts?"</div>
+                <div class="discovery-question">"If a vendor invoice is 20% higher than last month, how long before you know why?"</div>
             </div>
             
+            <div id="procurement" class="tab-content card">
+                <h3 class="card-title">For Procurement</h3>
+                <div class="discovery-question">"Does SuiteProcurement check vendor risk before creating POs?"</div>
+                <div class="discovery-question">"How many vendors get onboarded outside your official process?"</div>
+                <div class="discovery-question">"How do you know if you already have a similar solution from another vendor?"</div>
+                <div class="discovery-question">"Walk me through what happens when a vendor fails a risk assessment today."</div>
+                <div class="discovery-question">"What's your average time from vendor identification to first PO?"</div>
+            </div>
+
+            <div id="risk" class="tab-content card">
+                <h3 class="card-title">For Risk/Compliance</h3>
+                <div class="discovery-question">"How do you stop high-risk vendors from entering SuiteProcurement?"</div>
+                <div class="discovery-question">"What happens when a vendor's risk profile changes AFTER they're onboarded?"</div>
+                <div class="discovery-question">"How do you ensure contract terms match the vendor's risk level?"</div>
+                <div class="discovery-question">"Show me how you'd find all vendors with access to customer data right now."</div>
+                <div class="discovery-question">"How do you track vendor certificates, insurance, and attestations?"</div>
+            </div>
+
+            <div id="legal" class="tab-content card">
+                <h3 class="card-title">For Legal</h3>
+                <div class="discovery-question">"How do SuiteProcurement POs reference contract terms?"</div>
+                <div class="discovery-question">"How many contracts are on auto-renewal that shouldn't be?"</div>
+                <div class="discovery-question">"What's your current contract repository and how does it connect to NetSuite?"</div>
+                <div class="discovery-question">"How long does it take to answer 'what do we spend with this vendor across all contracts?'"</div>
+                <div class="discovery-question">"What happens when a vendor invoice references a contract that Legal can't find?"</div>
+            </div>
+
         </main>
     </div>
 
