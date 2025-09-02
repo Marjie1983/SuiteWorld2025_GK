@@ -153,9 +153,11 @@ nav a:hover, nav a.active {
 .card ul {
     padding-left: 20px;
     line-height: 1.6;
-    color: var(--text-secondary);
+    color: var(--light-grey-text)
 }
-
+.highlight-box ul {
+    color: var(--text-primary);
+}
 .card h4 {
     color: var(--text-primary);
     margin-top: 1rem;
