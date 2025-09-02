@@ -705,3 +705,12 @@ table.sponsor-table {
 .objection-response strong {
     color: var(--brand-green);
 }
+/* Style for question context/explanation text */
+.question-context {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    padding-left: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
