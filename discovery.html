@@ -199,11 +199,28 @@
             if(targetContent) targetContent.classList.add('active');
             button.classList.add('active');
         }
+
         document.addEventListener('DOMContentLoaded', () => {
             const firstTabButton = document.querySelector('.tab-button');
             if(firstTabButton) {
                 firstTabButton.click();
             }
+
+            // Accordion Logic for closing others
+            const accordions = document.querySelectorAll('.card-accordion, .objection-accordion');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('toggle', (event) => {
+                    if (accordion.open) {
+                        // Find all accordions within the same container (page or tab)
+                        const container = accordion.closest('.content-area, .tab-content');
+                        container.querySelectorAll('.card-accordion, .objection-accordion').forEach(otherAccordion => {
+                            if (otherAccordion !== accordion) {
+                                otherAccordion.open = false;
+                            }
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
