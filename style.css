@@ -222,4 +222,71 @@ nav a:hover, nav a.active {
     background-color: var(--dark-purple-accent);
     color: var(--brand-cyan);
 }
+/* Styles for Quick Start Page components */
+.do-dont-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
 
+.do-box, .dont-box {
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: var(--text-primary);
+}
+
+.do-box {
+    background: rgba(52, 211, 153, 0.2);
+    border: 2px solid var(--brand-green);
+}
+
+.dont-box {
+    background: rgba(239, 68, 68, 0.2);
+    border: 2px solid var(--danger);
+}
+
+.do-box h4, .dont-box h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.do-box ul, .dont-box ul {
+    padding-left: 20px;
+    color: var(--light-grey-text);
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.metric-card {
+    background: var(--dark-blue-accent);
+    border: 1px solid var(--dark-border);
+    color: var(--light-grey-text);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.metric-number {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--brand-green);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive adjustments for these components */
+@media (max-width: 768px) {
+    .do-dont-grid {
+        grid-template-columns: 1fr;
+    }
+}
