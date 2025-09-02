@@ -596,3 +596,34 @@ table.sponsor-table {
 .sponsor-table th, .sponsor-table td {
     width: 25%; /* Distribute remaining width */
 }
+/* Styles for Sponsor Badges */
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.badge-platinum {
+    color: #111827;
+    background-color: #e5e7eb;
+}
+.badge-gold {
+    color: #111827;
+    background-color: #f59e0b;
+}
+.badge-silver {
+    color: #111827;
+    background-color: #d1d5db;
+}
+.badge-bfn {
+    color: #f9fafb;
+    background-color: #4f46e5;
+}
