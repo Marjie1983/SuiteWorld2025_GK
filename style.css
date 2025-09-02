@@ -568,3 +568,31 @@ table.sponsor-table {
     background-color: rgba(52, 211, 153, 0.1);
     border-left: 4px solid var(--brand-green);
 }
+/* Styles for the new 4th column */
+.sponsor-table .gatekeeper-advantage-col {
+    background-color: var(--brand-purple-dark); /* A distinct, darker purple from our branding */
+    color: var(--light-text); /* Lighter text for contrast */
+    font-weight: 500;
+    width: 25%; /* Adjust width to make space for 4 columns */
+}
+
+/* Ensure consistent padding and styling for the new column */
+.sponsor-table .gatekeeper-advantage-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sponsor-table .gatekeeper-advantage-col ul li {
+    padding: 0.25rem 0;
+}
+
+/* Adjust initial column width for 4 columns */
+.sponsor-table td:first-child {
+    width: 18%; /* Slightly less for 4 columns */
+}
+.sponsor-table th:first-child {
+     width: 18%; /* Match header */
+}
+.sponsor-table th, .sponsor-table td {
+    width: 25%; /* Distribute remaining width */
+}
