@@ -459,3 +459,61 @@ nav a:hover, nav a.active {
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     border-left: 5px solid var(--brand-cyan);
 }
+/* Styles for Quick Reference Page */
+.reference-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.ref-section {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.ref-section h3 {
+    color: var(--brand-cyan);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--brand-cyan);
+    padding-bottom: 0.5rem;
+}
+
+.ref-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ref-section li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.ref-section li:last-child {
+    border-bottom: none;
+}
+
+.ref-section strong {
+    color: var(--text-primary);
+}
+
+.power-statement {
+    grid-column: 1 / -1; /* Makes this section span both columns */
+    background-image: var(--brand-gradient);
+    color: white;
+}
+
+.power-statement h3 {
+    color: white;
+    border-bottom-color: white;
+}
+
+@media (max-width: 992px) {
+    .reference-grid {
+        grid-template-columns: 1fr;
+    }
+}
