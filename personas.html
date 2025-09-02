@@ -24,50 +24,60 @@
             ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
         </div>
 
-<nav>
-    <ul>
-        <li class="nav-item"><a href="index.html">What's New</a></li>
-        <li class="nav-item">
-            <a href="#">Essentials ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="quick-start.html">⚡ Quick Start</a></li>
-                <li><a href="quick-reference.html">📋 Quick Reference</a></li>
-                <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
-                <li><a href="messaging.html">📢 Core Messaging</a></li>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Essentials ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quick-start.html">⚡ Quick Start</a></li>
+                        <li><a href="quick-reference.html">📋 Quick Reference</a></li>
+                        <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
+                        <li><a href="messaging.html">📢 Core Messaging</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html" class="active">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                        <li><a href="soundbites.html">💡 Key Soundbites</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Competitors ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
+                        <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                        <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        <li class="nav-item"><a href="personas.html">Personas</a></li>
-        <li class="nav-item">
-            <a href="#">Conversations ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="pitches.html">💬 Elevator Pitches</a></li>
-                <li><a href="objections.html">🛡️ Objection Handlers</a></li>
-                <li><a href="discovery.html">🔍 Discovery Questions</a></li>
-                <li><a href="soundbites.html">💡 Key Soundbites</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Competitors ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
-                <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Demos & Value ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="demos.html">🎬 Demo Flows</a></li>
-                <li><a href="value.html">💰 Value & ROI</a></li>
-                <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+        </nav>
         
         <main class="content-area">
             <h2 class="section-title">👤 Persona Intelligence</h2>
 
-            <div class="card">
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('ecosystem-builder', this)">Ecosystem Builder</button>
+                <button class="tab-button" onclick="showTab('risk-compliance', this)">Risk/Compliance</button>
+                <button class="tab-button" onclick="showTab('netsuite-admin', this)">NetSuite Admin</button>
+                <button class="tab-button" onclick="showTab('finance', this)">Finance</button>
+                <button class="tab-button" onclick="showTab('legal', this)">Legal</button>
+                <button class="tab-button" onclick="showTab('it-director', this)">IT Director</button>
+                <button class="tab-button" onclick="showTab('c-suite', this)">C-Suite</button>
+            </div>
+
+            <div id="ecosystem-builder" class="tab-content card">
                 <h3 class="card-title">🌐 The Ecosystem Builder (PRIMARY)</h3>
                 <p><strong>Profile:</strong> Uses NetSuite + multiple vendor tools and is seeking integration. The hottest persona at SuiteWorld 2025.</p>
                 <h4 style="margin-top: 1rem;">Their Current Stack:</h4>
@@ -90,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="risk-compliance" class="tab-content card">
                 <h3 class="card-title">🛡️ Risk & Compliance Manager</h3>
                 <p><strong>Profile:</strong> Owns vendor risk assessments and compliance tracking. The gap in NetSuite's capabilities is our strongest differentiation here.</p>
                 <h4 style="margin-top: 1rem;">Competitors They Love:</h4>
@@ -111,8 +121,8 @@
                     <p>"SuiteProcurement efficiently processes purchases, but it's blind to risk. We add the intelligence layer, screening every vendor before they even enter NetSuite."</p>
                 </div>
             </div>
-
-            <div class="card">
+            
+            <div id="netsuite-admin" class="tab-content card">
                 <h3 class="card-title">👨‍💼 NetSuite Administrator</h3>
                 <p><strong>Profile:</strong> Owns the NetSuite configuration. They see all the gaps and have major influence over purchasing decisions.</p>
                 <h4 style="margin-top: 1rem;">Tools They Love:</h4>
@@ -134,7 +144,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="finance" class="tab-content card">
                 <h3 class="card-title">💰 Finance Manager/Controller</h3>
                 <p><strong>Profile:</strong> Owns AP/AR, the month-end close, and audit prep. They are looking for real intelligence, not just more automation.</p>
                 <h4 style="margin-top: 1rem;">Tools They Love:</h4>
@@ -157,7 +167,7 @@
                 </div>
             </div>
             
-            <div class="card">
+            <div id="legal" class="tab-content card">
                 <h3 class="card-title">⚖️ Legal Operations</h3>
                 <p><strong>Profile:</strong> Owns the contract lifecycle and vendor agreements. The contract gap is a glaring weakness in SuiteProcurement.</p>
                 <h4 style="margin-top: 1rem;">Current Solutions:</h4>
@@ -179,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="it-director" class="tab-content card">
                 <h3 class="card-title">💻 IT Director/Manager</h3>
                 <p><strong>Profile:</strong> Strategic decision maker who owns the tech stack and security. Security gaps in SuiteProcurement are a major concern for them.</p>
                 <h4 style="margin-top: 1rem;">Tools They Trust:</h4>
@@ -201,7 +211,7 @@
                 </div>
             </div>
             
-            <div class="card">
+            <div id="c-suite" class="tab-content card">
                 <h3 class="card-title">👔 CFO/VP Finance (C-Suite)</h3>
                 <p><strong>Profile:</strong> Strategic executive who owns financial performance and risk. A rare but high-value contact at SuiteWorld.</p>
                 <h4 style="margin-top: 1rem;">What They Care About:</h4>
@@ -219,11 +229,11 @@
                     <li>"Get a board-ready compliance posture"</li>
                 </ul>
                  <div class="highlight-box">
-                    <h3>Your Key Message:</h4>
+                    <h3>Your Key Message:</h3>
                     <p>"Every point solution adds complexity. We unify vendor management in one AI-powered platform that pays for itself through guaranteed savings while reducing risk. Your team gets 10X productivity, you get board-ready metrics, and we guarantee 3X ROI."</p>
                 </div>
             </div>
-            
+
         </main>
     </div>
 
