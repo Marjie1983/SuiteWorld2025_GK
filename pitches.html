@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - Elevator Pitches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://gatekeeperhq.com" target="_blank">Gatekeeper</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Essentials ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quick-start.html">⚡ Quick Start</a></li>
+                        <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
+                        <li><a href="messaging.html">📢 Core Messaging</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#" class="active">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="competitors.html">Competitors</a></li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">💬 Persona-Based Elevator Pitches</h2>
+
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('admin-pitch', this)">NetSuite Admin</button>
+                <button class="tab-button" onclick="showTab('finance-pitch', this)">Finance</button>
+                <button class="tab-button" onclick="showTab('procurement-pitch', this)">Procurement</button>
+                <button class="tab-button" onclick="showTab('risk-pitch', this)">Risk/Compliance</button>
+                <button class="tab-button" onclick="showTab('legal-pitch', this)">Legal</button>
+                <button class="tab-button" onclick="showTab('partner-users-pitch', this)">Partner Users</button>
+            </div>
+
+            <div id="admin-pitch" class="tab-content card">
+                <h3 class="card-title">👨‍💼 Pitch for a NetSuite Admin</h3>
+                <p>"NetSuite's new SuiteProcurement is fantastic for streamlining purchase orders. As a 'Built for NetSuite' verified partner, we provide the intelligence layer your users need right inside NetSuite: vendor risk scores, contract visibility, and compliance tracking. It gives your team the data they need with no new system to learn."</p>
+            </div>
+
+            <div id="finance-pitch" class="tab-content card">
+                <h3 class="card-title">💰 Pitch for a Finance Manager</h3>
+                <p>"NetSuite's Bill Capture is excellent at catching duplicate invoices. We add the critical intelligence layer before the invoice even arrives—connecting every PO to its contract, validating charges against negotiated rates, and alerting you before costly auto-renewals. We help customers find an average of 17% in recoverable spend."</p>
+            </div>
+
+            <div id="procurement-pitch" class="tab-content card">
+                <h3 class="card-title">🛍️ Pitch for a Procurement Manager</h3>
+                <p>"SuiteProcurement revolutionizes PO management, but Oracle knows complete procurement requires specialized partners. While NetSuite perfects the transaction, we provide the intelligence layer that sits on top: automated vendor risk assessments, AI-powered contract management, and continuous compliance monitoring."</p>
+            </div>
+
+            <div id="risk-pitch" class="tab-content card">
+                <h3 class="card-title">🛡️ Pitch for a Risk/Compliance Officer</h3>
+                <p>"SuiteProcurement streamlines vendor transactions beautifully. But here's what's critical—and why NetSuite partners with us: every vendor needs a risk assessment before they can transact. We put risk screening at the front door of your process, with continuous monitoring, and surface it all right in NetSuite."</p>
+            </div>
+
+            <div id="legal-pitch" class="tab-content card">
+                <h3 class="card-title">⚖️ Pitch for Legal Operations</h3>
+                <p>"NetSuite excels at processing transactions, and they recognize that CLM requires deep specialization. We provide a complete CLM that's seamlessly connected to every NetSuite transaction. When renewals approach, you get automated alerts with all the negotiation leverage you need."</p>
+            </div>
+
+            <div id="partner-users-pitch" class="tab-content card">
+                <h3 class="card-title">🤝 Pitch for Current Partner Users (Tipalti, Airbase, etc.)</h3>
+                <p>"I see you're using Tipalti/Airbase—excellent choice, we're partners! They handle payments/spend brilliantly. We add the missing vendor intelligence layer: risk assessments before onboarding, contract terms during purchasing, and compliance monitoring throughout. Together, we create your complete Vendor Command Center."</p>
+            </div>
+            
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+        // Set the first tab as active on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
