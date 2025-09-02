@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - Discovery Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://gatekeeperhq.com" target="_blank">Gatekeeper</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Essentials ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quick-start.html">⚡ Quick Start</a></li>
+                        <li><a href="ecosystem.html">🌐 Ecosystem Strategy</a></li>
+                        <li><a href="messaging.html">📢 Core Messaging</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#" class="active">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="competitors.html">Competitors</a></li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">🔍 Discovery Questions</h2>
+
+            <div class="card">
+                <h3 class="card-title">🎯 Opening Discovery (For All Personas)</h3>
+                <div class="discovery-question">"What's your current vendor management tech stack?"</div>
+                <div class="discovery-question">"How well do those systems talk to each other?"</div>
+                <div class="discovery-question">"Where do you spend the most time on manual data reconciliation?"</div>
+                <div class="discovery-question">"If your payment system could see contract terms before paying an invoice, what would that prevent?"</div>
+                <div class="discovery-question">"If your spend management tool knew a vendor's risk score, how would that change your approval process?"</div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Persona-Specific Discovery Questions</h3>
+                <h4>👨‍💼 For NetSuite Admins:</h4>
+                <div class="discovery-question">"How many custom fields have you had to create just to track basic vendor compliance?"</div>
+                
+                <h4 style="margin-top: 1.5rem;">💰 For Finance:</h4>
+                <div class="discovery-question">"Can NetSuite's Bill Capture tell you if an invoice's charges exceed the rates you negotiated in the contract?"</div>
+                
+                <h4 style="margin-top: 1.5rem;">🛍️ For Procurement:</h4>
+                <div class="discovery-question">"Does SuiteProcurement automatically check a vendor's risk and compliance status before a purchase order can be created?"</div>
+
+                <h4 style="margin-top: 1.5rem;">🛡️ For Risk/Compliance:</h4>
+                <div class="discovery-question">"How do you currently stop a high-risk vendor from being added to SuiteProcurement in the first place?"</div>
+                
+                <h4 style="margin-top: 1.5rem;">⚖️ For Legal:</h4>
+                <div class="discovery-question">"How do your purchase orders in SuiteProcurement currently reference the specific terms and conditions of the master contract?"</div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
