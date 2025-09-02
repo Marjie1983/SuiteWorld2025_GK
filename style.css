@@ -354,3 +354,33 @@ nav a:hover, nav a.active {
     border-radius: 4px;
     font-weight: 500;
 }
+/* Styles for Demo Flow steps */
+.demo-step {
+    display: flex;
+    align-items: flex-start;
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    background-image: var(--brand-gradient);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.demo-step h4 {
+    color: var(--brand-cyan);
+    margin-bottom: 0.25rem;
+}
