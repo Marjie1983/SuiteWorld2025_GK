@@ -517,3 +517,54 @@ nav a:hover, nav a.active {
         grid-template-columns: 1fr;
     }
 }
+/* Styles for Sponsor Table Page */
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+table.sponsor-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--dark-card);
+}
+
+.sponsor-table th, .sponsor-table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid var(--dark-border);
+    vertical-align: top;
+}
+
+.sponsor-table thead th {
+    background-color: var(--off-black);
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.sponsor-table tbody tr:hover {
+    background-color: var(--off-black);
+}
+
+.sponsor-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+    width: 20%;
+}
+
+.sponsor-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sponsor-table ul li {
+    padding: 0.25rem 0;
+}
+
+.gatekeeper-completes {
+    background-color: rgba(52, 211, 153, 0.1);
+    border-left: 4px solid var(--brand-green);
+}
