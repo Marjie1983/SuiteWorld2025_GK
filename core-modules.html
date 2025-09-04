@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - Core Modules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://www.gatekeeperhq.com/suiteworld-2025" target="_blank">Gatekeeper X SuiteWorld 2025</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="core-messaging.html">📢 Core Messaging</a></li>
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                        <li><a href="soundbites.html">💡 Key Soundbites</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#" class="active">Product Guide ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="core-modules.html">Core Modules</a></li>
+                        <li><a href="#">Key Features</a></li>
+                        <li><a href="#">NetSuite Integration</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="#">Booth Playbook ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Roles & Workflow</a></li>
+                        <li><a href="#">Lead Qualification</a></li>
+                        <li><a href="#">Event Logistics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Competitors ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
+                        <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customer-stories.html">🏆 Customer Stories</a></li>
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                        <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">📦 Core Modules Overview</h2>
+
+            <div class="card">
+                <h3 class="card-title">Vendor Management</h3>
+                <p>Seamlessly integrated with NetSuite, Gatekeeper enhances your existing vendor records. We create a single source of truth by providing structured workflows to manage the entire vendor lifecycle, from intake and onboarding to performance and offboarding.</p>
+                <ul>
+                    <li>Centralised Vendor Data</li>
+                    <li>Automated Onboarding Workflows</li>
+                    <li>Vendor Portal for Collaboration</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Contract Management</h3>
+                <p>Gatekeeper provides a complete Contract Lifecycle Management (CLM) solution. Within any NetSuite vendor record, you can immediately access all associated contracts, view key metadata, and store all documents in a centralized, searchable repository.</p>
+                 <ul>
+                    <li>Centralised Contract Repository</li>
+                    <li>AI-Powered Data Extraction</li>
+                    <li>Automated Renewal Alerts</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3 class="card-title">Risk Management</h3>
+                <p>Ensure financial integrity and protect your business by embedding risk management directly into your procurement process. We provide automated risk assessments for cybersecurity, financial stability, and tax ID verification, ensuring you only work with compliant, low-risk vendors.</p>
+                <ul>
+                    <li>Automated Due Diligence</li>
+                    <li>Continuous Risk Monitoring</li>
+                    <li>Audit-Ready Compliance Tracking</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Spend Analytics</h3>
+                <p>Connect your contracts to your financials. When you create a bill in NetSuite, the expenditure is automatically pushed to Gatekeeper, maintaining perfect traceability. This allows you to view detailed spend analysis and compare actuals against contract forecasts to identify variances instantly.</p>
+                 <ul>
+                    <li>Automated Spend Tracking</li>
+                    <li>Forecast vs. Actuals Reporting</li>
+                    <li>Savings and ROI Dashboards</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+
+            // Accordion Logic for closing others
+            const accordions = document.querySelectorAll('.card-accordion, .objection-accordion');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('toggle', (event) => {
+                    if (accordion.open) {
+                        const container = accordion.closest('.content-area, .tab-content');
+                        container.querySelectorAll('.card-accordion, .objection-accordion').forEach(otherAccordion => {
+                            if (otherAccordion !== accordion) {
+                                otherAccordion.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
