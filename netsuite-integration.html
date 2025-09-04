@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - NetSuite Integration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://www.gatekeeperhq.com/suiteworld-2025" target="_blank">Gatekeeper X SuiteWorld 2025</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
+                <li class="nav-item">
+                    <a href="#">Conversations ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="core-messaging.html">📢 Core Messaging</a></li>
+                        <li><a href="pitches.html">💬 Elevator Pitches</a></li>
+                        <li><a href="objections.html">🛡️ Objection Handlers</a></li>
+                        <li><a href="discovery.html">🔍 Discovery Questions</a></li>
+                        <li><a href="soundbites.html">💡 Key Soundbites</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="personas.html">Personas</a></li>
+                <li class="nav-item">
+                    <a href="#" class="active">Product Guide ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="core-modules.html">Core Modules</a></li>
+                        <li><a href="key-features.html">Key Features</a></li>
+                        <li><a href="netsuite-integration.html">NetSuite Integration</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="#">Booth Playbook ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Roles & Workflow</a></li>
+                        <li><a href="#">Lead Qualification</a></li>
+                        <li><a href="#">Event Logistics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Competitors ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competitors.html">⚔️ Quick Battle Cards</a></li>
+                        <li><a href="sponsors.html">🤝 Full Sponsor Analysis</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Demos & Value ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customer-stories.html">🏆 Customer Stories</a></li>
+                        <li><a href="demos.html">🎬 Demo Flows</a></li>
+                        <li><a href="value.html">💰 Value & ROI</a></li>
+                        <li><a href="luminiq.html">🧠 LuminIQ & AI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">🔗 NetSuite Integration Deep Dive</h2>
+
+            <div class="card">
+                <h3 class="card-title">A Single Source of Truth</h3>
+                <p>Our integration transforms vendor and contract management by embedding a dedicated **"Gatekeeper" tab** directly within your NetSuite vendor records. This provides immediate, context-rich access to all associated contracts, risk data, and compliance information without ever leaving the NetSuite UI.</p>
+                <div class="highlight-box" style="margin-top: 1rem;">
+                    <p><strong>Key Message:</strong> "Stop juggling multiple systems. We bring the vendor and contract intelligence you need directly into the NetSuite environment you already use."</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">How the Data Syncs</h3>
+                 <div class="battlecard-detail">
+                    <h4>Vendor Data Sync</h4>
+                    <p>Gatekeeper controls data quality. New vendors are onboarded, risk-assessed, and validated in Gatekeeper first. Only once they meet your standards are they synced to NetSuite, ensuring your vendor master remains clean and accurate. The NetSuite ID is then synced back to Gatekeeper, creating a permanent link.</p>
+                </div>
+                 <div class="battlecard-detail">
+                    <h4>Spend Data Sync</h4>
+                    <p>When you create and pay a bill in NetSuite, you can associate it with a Gatekeeper contract. NetSuite then automatically pushes the expenditure data to Gatekeeper as 'Spend,' maintaining the original NetSuite reference IDs for perfect traceability and enabling spend vs. contract forecast analysis.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 class="card-title">The "Built for NetSuite" (BFN) Advantage</h3>
+                <p>Being a "Built for NetSuite" partner is more than a logo; it's a guarantee of quality and security. It means our integration has been rigorously reviewed and verified by NetSuite's technical team to meet their highest standards.</p>
+                <ul>
+                    <li><strong>Security:</strong> Our integration has passed stringent security reviews to protect your data.</li>
+                    <li><strong>Reliability:</strong> The solution is built to scale and perform reliably within your NetSuite environment.</li>
+                    <li><strong>Best Practices:</strong> The integration is designed and built following NetSuite's official development best practices.</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+
+            // Accordion Logic for closing others
+            const accordions = document.querySelectorAll('.card-accordion, .objection-accordion');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('toggle', (event) => {
+                    if (accordion.open) {
+                        const container = accordion.closest('.content-area, .tab-content');
+                        container.querySelectorAll('.card-accordion, .objection-accordion').forEach(otherAccordion => {
+                            if (otherAccordion !== accordion) {
+                                otherAccordion.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
