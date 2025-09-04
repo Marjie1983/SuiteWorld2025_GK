@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper SuiteWorld 2025 - Core Messaging</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="branding-bar">
+                <div class="logo"><a href="https://www.gatekeeperhq.com/suiteworld-2025" target="_blank">Gatekeeper X SuiteWorld 2025</a></div>
+                <div class="logo"><a href="https://www.netsuitesuiteworld.com/" target="_blank">SuiteWorld 2025</a></div>
+            </div>
+            <h1>🚀 Gatekeeper SuiteWorld 2025</h1>
+            <p>Interactive Sales Guide | Ecosystem Edition</p>
+        </header>
+
+        <div class="status-banner">
+            ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
+        </div>
+
+        <nav>
+            <!-- THIS NAVIGATION WILL BE UPDATED IN THE NEXT STEP -->
+        </nav>
+        
+        <main class="content-area">
+            <h2 class="section-title">📢 Core Messaging & Strategy</h2>
+
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('quick-start', this)">Quick Start</button>
+                <button class="tab-button" onclick="showTab('quick-reference', this)">Quick Reference</button>
+                <button class="tab-button" onclick="showTab('partner-messaging', this)">Partner Messaging</button>
+                <button class="tab-button" onclick="showTab('core-messaging', this)">Core Messaging</button>
+            </div>
+
+            <!-- Tab 1: Quick Start -->
+            <div id="quick-start" class="tab-content card">
+                <h3 class="card-title">⚡ Quick Start Guide</h3>
+                <div class="highlight-box">
+                    <h4 style="color:white;">🎯 Core Message</h4>
+                    <p>"NetSuite + Gatekeeper + Partners = The Complete Vendor Command Center"</p>
+                </div>
+                <h4>30-Second Qualifier</h4>
+                <p><strong>Ask: "Are you using NetSuite's new SuiteProcurement?"</strong></p>
+                <ul>
+                    <li><strong>If YES:</strong> "How are you currently handling vendor risk and contract management within it?"</li>
+                    <li><strong>If NO:</strong> "Great, that's a perfect place to start. Let me show you how we complete the picture for users when they do adopt it."</li>
+                    <li><strong>If CONSIDERING:</strong> "Excellent. As you plan, it's key to see how the platform is designed to work with partners like us to handle the full vendor lifecycle—from risk and contracts to compliance."</li>
+                </ul>
+            </div>
+
+            <!-- Tab 2: Quick Reference -->
+            <div id="quick-reference" class="tab-content card">
+                <h3 class="card-title">📋 Quick Reference Card</h3>
+                <div class="reference-grid">
+                    <div class="ref-section">
+                        <h4>💬 Opening Hooks by Persona</h4>
+                        <ul>
+                            <li><strong>NetSuite Admin:</strong> "How many hours weekly updating vendor records manually?"</li>
+                            <li><strong>Finance Manager:</strong> "Quick question - what's your auto-renewal exposure right now?"</li>
+                            <li><strong>Procurement:</strong> "As you use SuiteProcurement, how are you bringing vendor risk intelligence into the PO creation process?"</li>
+                            <li><strong>Risk/Compliance:</strong> "We help a lot of teams connect vendor compliance directly to their NetSuite records. What's your current process for that?"</li>
+                        </ul>
+                    </div>
+                    <div class="ref-section">
+                        <h4>⚔️ Competitor Quick Counters</h4>
+                        <ul>
+                            <li><strong>Zip:</strong> "50 AI agents is impressive. Which one does vendor risk assessment?"</li>
+                            <li><strong>Coupa:</strong> "$8T in data, but can it connect your POs to contract terms?"</li>
+                            <li><strong>Tipalti:</strong> "Great for payments. How does it validate invoices against contracts?"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Partner Messaging -->
+            <div id="partner-messaging" class="tab-content card">
+                <h3 class="card-title">🌐 Partner Messaging (Ecosystem Strategy)</h3>
+                <h4>The Three Pillars of Our Ecosystem</h4>
+                <ul>
+                    <li><strong>1. NetSuite Foundation:</strong> Handles all transactions brilliantly and provides the core ERP backbone.</li>
+                    <li><strong>2. Gatekeeper Intelligence Layer:</strong> Adds risk assessment, contract management, and compliance monitoring to make NetSuite complete.</li>
+                    <li><strong>3. Partner Amplification:</strong> Ensures our intelligence flows to partners like Tipalti and Airbase for smarter payments and spend.</li>
+                </ul>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <h4 style="color:white;">The Command Center Message</h4>
+                    <p>"While competitors offer point solutions, we build an ecosystem. NetSuite provides the foundation, Gatekeeper adds the intelligence, and our partners complete the specialized functions. Together, we create your Vendor Command Center."</p>
+                </div>
+            </div>
+
+            <!-- Tab 4: Core Messaging -->
+            <div id="core-messaging" class="tab-content card">
+                <h3 class="card-title">📢 Core Messaging</h3>
+                 <div class="highlight-box">
+                    <h4>Version 1: Standard</h4>
+                    <p>"NetSuite's new SuiteProcurement handles the buying. Gatekeeper provides the intelligence that makes buying safe, compliant, and profitable."</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>Version 2: Ecosystem Focus</h4>
+                    <p>"NetSuite provides the foundation. Our partners like Tipalti and Airbase add specialized capabilities. Gatekeeper provides the intelligence that connects everything into your complete Vendor Command Center."</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabId, button) {
+            const parent = button.closest('.content-area');
+            parent.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            parent.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            const targetContent = parent.querySelector(`#${tabId}`);
+            if(targetContent) targetContent.classList.add('active');
+            button.classList.add('active');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTabButton = document.querySelector('.tab-button');
+            if(firstTabButton) {
+                firstTabButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
