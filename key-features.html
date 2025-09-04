@@ -76,43 +76,58 @@
         <main class="content-area">
             <h2 class="section-title">✨ Key Features & Use Cases</h2>
 
-            <div class="card">
-                <h3 class="card-title">AI-Powered Contract Extraction (AI Extract™)</h3>
-                <p>Instantly turn any contract, including scanned PDFs, into actionable data. LuminIQ extracts all critical data—parties, terms, obligations, and risks—in seconds, saving hundreds of hours of manual review.</p>
-                <div class="highlight-box" style="margin-top: 1rem;">
-                    <p><strong>Use When:</strong> A prospect mentions manual contract review, data entry, or missed renewal dates.</p>
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('key-features', this)">Key Features</button>
+                <button class="tab-button" onclick="showTab('use-cases', this)">Use Cases</button>
+            </div>
+
+            <div id="key-features" class="tab-content card">
+                <h3 class="card-title">Key Platform Features</h3>
+                <div class="battlecard-detail">
+                    <h4>AI-Powered Contract Extraction (AI Extract™)</h4>
+                    <p>Instantly turn any contract, including scanned PDFs, into actionable data. LuminIQ extracts all critical data—parties, terms, obligations, and risks—in seconds, saving hundreds of hours of manual review.</p>
+                    <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect mentions manual contract review, data entry, or missed renewal dates.</p>
+                    </div>
+                </div>
+                <div class="battlecard-detail">
+                    <h4>No-Code Workflow Engine</h4>
+                    <p>Automate your entire vendor and contract lifecycle with a visual, drag-and-drop workflow builder. Create tailored processes for everything from intake and onboarding to approvals and compliance checks, with no coding required.</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect describes a slow, manual, or inconsistent approval process that involves multiple systems or email chains.</p>
+                    </div>
+                </div>
+                <div class="battlecard-detail">
+                    <h4>The Vendor Portal</h4>
+                    <p>Empower vendors to self-serve while maintaining full control. The portal allows vendors to onboard, submit compliance documents (like W8/W9 forms), and collaborate on contracts, dramatically reducing the administrative burden on your team.</p>
+                    <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect complains about the endless back-and-forth of chasing vendors for information or documents.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <h3 class="card-title">No-Code Workflow Engine</h3>
-                <p>Automate your entire vendor and contract lifecycle with a visual, drag-and-drop workflow builder. Create tailored processes for everything from intake and onboarding to approvals and compliance checks, with no coding required.</p>
-                 <div class="highlight-box" style="margin-top: 1rem;">
-                    <p><strong>Use When:</strong> A prospect describes a slow, manual, or inconsistent approval process that involves multiple systems or email chains.</p>
+            <div id="use-cases" class="tab-content card">
+                <h3 class="card-title">High-Impact Use Cases</h3>
+                <div class="battlecard-detail">
+                    <h4>Financial Compliance: The W8 Form Review Process</h4>
+                    <p>For new vendors, Gatekeeper captures critical financial compliance documents like the W8 Form directly through the Vendor Portal. A Lumin Agent can then review the document against customizable standards and approve the vendor's financial compliance in seconds, not hours.</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect in Finance or AP mentions the pain and time involved in manually validating tax forms.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card">
-                <h3 class="card-title">The Vendor Portal</h3>
-                <p>Empower vendors to self-serve while maintaining full control. The portal allows vendors to onboard, submit compliance documents (like W8/W9 forms), and collaborate on contracts, dramatically reducing the administrative burden on your team.</p>
-                <div class="highlight-box" style="margin-top: 1rem;">
-                    <p><strong>Use When:</strong> A prospect complains about the endless back-and-forth of chasing vendors for information or documents.</p>
+                <div class="battlecard-detail">
+                    <h4>Data Validation: The Automated TIN/VAT Checks</h4>
+                    <p>Ensure financial integrity from day one. During onboarding, our workflow provides real-time tax ID verification (TIN/VAT checks) to prevent fraud and ensure data accuracy before a vendor is ever synced to NetSuite.</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect is concerned about data quality in NetSuite or the risk of vendor fraud.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card">
-                <h3 class="card-title">Use Case: Financial Compliance Automation</h3>
-                <p>For new vendors, Gatekeeper can capture critical financial compliance documents like the W8 Form directly through the Vendor Portal. A Lumin Agent can then review the document against customizable standards and approve the vendor's financial compliance in seconds, not hours.</p>
-                 <div class="highlight-box" style="margin-top: 1rem;">
-                    <p><strong>Use When:</strong> A prospect in Finance or AP mentions the pain and time involved in manually validating tax forms.</p>
-                </div>
-            </div>
-
-             <div class="card">
-                <h3 class="card-title">Use Case: Automated Data Validation</h3>
-                <p>Ensure financial integrity from day one. During onboarding, our workflow provides automated risk assessments for cybersecurity, financial stability, and real-time tax ID verification (TIN/VAT checks) to prevent fraud and ensure data accuracy before a vendor is ever synced to NetSuite.</p>
-                 <div class="highlight-box" style="margin-top: 1rem;">
-                    <p><strong>Use When:</strong> A prospect is concerned about data quality in NetSuite or the risk of vendor fraud.</p>
+                 <div class="battlecard-detail">
+                    <h4>Risk Mitigation: How Lumin Agents Flag Issues</h4>
+                    <p>Embed due diligence directly into your onboarding workflow. Lumin Agents can automatically review vendor submissions, flag risks based on your custom standards, and route vendors to an internal risk review, ensuring no high-risk vendors are ever approved.</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Use When:</strong> A prospect mentions the need for a formal risk assessment process or worries about inconsistent vendor screening.</p>
+                    </div>
                 </div>
             </div>
 
