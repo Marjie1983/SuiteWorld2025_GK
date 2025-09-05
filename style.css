@@ -773,3 +773,18 @@ table.sponsor-table {
 .card-accordion[open] .battlecard-detail {
     padding-top: 1.5rem;
 }
+/* Style for the new danger-themed metric card */
+.metric-card.metric-card-danger {
+    background-color: var(--danger);
+    border-color: #fca5a5; /* A lighter red border */
+}
+
+.metric-card.metric-card-danger .metric-number {
+    color: var(--text-primary); /* Ensures the number is bright white */
+}
+
+/* Find and replace the existing .metric-label rule with this one for better contrast */
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--light-grey-text); /* Brighter text for labels */
+}
