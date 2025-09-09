@@ -24,11 +24,11 @@
             ✅ Built for NetSuite Verified Partner | Creating the Vendor Command Center
         </div>
 
-            <nav>
+        <nav>
             <ul>
-                <li class="nav-item"><a href="index.html" class="active">What's New</a></li>
+                <li class="nav-item"><a href="index.html">What's New</a></li>
                 <li class="nav-item">
-                    <a href="#">Conversations ▼</a>
+                    <a href="#" class="active">Conversations ▼</a>
                     <ul class="dropdown-menu">
                         <li><a href="core-messaging.html">📢 Core Messaging</a></li>
                         <li><a href="pitches.html">💬 Elevator Pitches</a></li>
@@ -78,113 +78,143 @@
         <main class="content-area">
             <h2 class="section-title">🛡️ Objection Handlers</h2>
 
-            <details class="objection-accordion">
-                <summary><h4>"We already have Tipalti/Airbase."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "Perfect! We're partners. They handle payments and spend excellently. We add the vendor intelligence they need—risk scores, contract terms, compliance status. Together, we make your entire vendor process complete."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/xwm4532szy.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_xwm4532szy audio=true" style="height:40px; width:100%;">&nbsp;</div>
-                    </div>
-                </div>
-            </details>
+            <div class="tab-container">
+                <button class="tab-button" onclick="showTab('general-objections', this)">General</button>
+                <button class="tab-button" onclick="showTab('csuite-objections', this)">C-Suite</button>
+            </div>
 
-            <details class="objection-accordion">
-                <summary><h4>"We have too many systems already."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "That's exactly why you need Gatekeeper—we unify your vendor intelligence, we don't add another silo. NetSuite, Tipalti, and Airbase can now share intelligence through our platform."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/ee2nng51bc.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_ee2nng51bc audio=true" style="height:40px; width:100%;">&nbsp;</div>
+            <div id="general-objections" class="tab-content">
+                <details class="objection-accordion">
+                    <summary><h4>"We already have Tipalti/Airbase."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "Perfect! We're partners. They handle payments and spend excellently. We add the vendor intelligence they need—risk scores, contract terms, compliance status. Together, we make your entire vendor process complete."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/xwm4532szy.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_xwm4532szy audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
                     </div>
-                </div>
-            </details>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"We have too many systems already."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "That's exactly why you need Gatekeeper—we unify your vendor intelligence, we don't add another silo. NetSuite, Tipalti, and Airbase can now share intelligence through our platform."</p>
+                         <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/ee2nng51bc.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_ee2nng51bc audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                 <details class="objection-accordion">
+                    <summary><h4>"We just implemented SuiteProcurement."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "Perfect timing. SuiteProcurement handles the transaction side beautifully. Now is the time to add the intelligence layer. How are you handling vendor risk, contracts, and compliance? We fill those expensive gaps."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/6sv2d22a84.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_6sv2d22a84 audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"NetSuite's Bill Capture handles our AP needs."</h4></summary>
+                    <div class="objection-response">
+                         <p><strong>✅ Your Response:</strong> "Bill Capture is great at catching duplicate invoices. But can it tell you if those charges exceed contracted rates? Or if the vendor's insurance has expired? We don't replace Bill Capture - we make it intelligent by adding contract and risk context to every invoice."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/w93ss5rn1q.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_w93ss5rn1q audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                 <details class="objection-accordion">
+                    <summary><h4>"SuiteProcurement is included, Gatekeeper costs extra."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "True, but incomplete procurement is far more expensive. Gatekeeper typically identifies 17% in recoverable spend—that's $170K per million. We don't just cost money, we pay for ourselves, guaranteed."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/59hb9qqyr2.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_59hb9qqyr2 audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"NetSuite should do everything."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "NetSuite is an amazing foundation, but even Oracle partners with specialists. That's why we've built an ecosystem - NetSuite for transactions, Gatekeeper for intelligence, Tipalti for payments, Airbase for spend. Best-in-class at each layer, all working as one."</p>
+                         <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/a2uqdg8mpw.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_a2uqdg8mpw audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"We're concerned about AI security/We can't use AI."</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "That's exactly why we're moving LuminIQ to Amazon Bedrock this September. Your data NEVER leaves your region - complete data sovereignty. We use Anthropic's Claude (not OpenAI), the same AI that powers major enterprises' secure operations. Your data stays exactly where you need it for compliance. Plus, you can turn AI features on or off at any time."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/st3pkrmqkk.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_st3pkrmqkk audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"How is your AI different from NetSuite's new AI features?"</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "Great question! NetSuite's AI focuses on processing transactions faster. LuminIQ is fundamentally different - it's intelligence AI, not automation AI. We predict vendor risks, identify contract violations, and surface savings opportunities you didn't know existed. Our AI works across your entire ecosystem - NetSuite, Tipalti, Airbase - not just in one system."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/k321rkckpx.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_k321rkckpx audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+                <details class="objection-accordion">
+                    <summary><h4>"Everyone claims to have AI - what makes yours real?"</h4></summary>
+                    <div class="objection-response">
+                        <p><strong>✅ Your Response:</strong> "Fair skepticism! Most 'AI' is just marketing spin. LuminIQ is different - it's not about magic. It's about connecting intelligence across your vendor ecosystem. When a risk flag appears, it automatically flows into contract terms. When spend patterns change, it triggers compliance reviews. That's connected intelligence, not just automation. Our clients typically see 17% vendor spend reduction, 73% fewer compliance issues & 3X ROI within the first year."</p>
+                        <div style="margin-top: 1rem;">
+                            <script src="https://fast.wistia.com/embed/medias/wcxbbakcv5.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_wcxbbakcv5 audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                        </div>
+                    </div>
+                </details>
+            </div>
 
-            <details class="objection-accordion">
-                <summary><h4>"We just implemented SuiteProcurement."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "Perfect timing. SuiteProcurement handles the transaction side beautifully. Now is the time to add the intelligence layer. How are you handling vendor risk, contracts, and compliance? We fill those expensive gaps."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/6sv2d22a84.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_6sv2d22a84 audio=true" style="height:40px; width:100%;">&nbsp;</div>
+            <div id="csuite-objections" class="tab-content">
+                <div class="card">
+                    <h3 class="card-title">The Budget Objection</h3>
+                    <p><strong>What they say:</strong> "This sounds interesting, but it's not in the budget for this year. We're focused on cutting costs, not adding them."</p>
+                    <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Your Strategic Response:</strong> "I completely understand, and that’s the right way to look at it. We approach this not as a new software cost, but as a cost-recovery project. The waste from non-compliant spend and missed renewals is already in your budget—it's just hidden. Our goal is to be a self-funding initiative within the first six months, paid for by eliminating that existing leakage."</p>
                     </div>
                 </div>
-            </details>
-            
-            <details class="objection-accordion">
-                <summary><h4>"NetSuite's Bill Capture handles our AP needs."</h4></summary>
-                <div class="objection-response">
-                     <p><strong>✅ Your Response:</strong> "Bill Capture is great at catching duplicate invoices. But let me ask - can it tell you if those charges exceed contracted rates? Or if the vendor's insurance has expired? That's where Gatekeeper comes in. We don't replace Bill Capture - we make it intelligent by adding contract and risk context to every invoice."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/w93ss5rn1q.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_w93ss5rn1q audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                <div class="card">
+                    <h3 class="card-title">The Priority Objection</h3>
+                    <p><strong>What they say:</strong> "Vendor management isn't one of our top 3 strategic priorities right now."</p>
+                    <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Your Strategic Response:</strong> "You're right, 'vendor management' on its own isn't the priority. Protecting your margin is. Every time a contract auto-renews without challenge or an invoice is paid that violates your negotiated terms, it directly impacts your profitability. We provide the intelligence layer on top of your NetSuite system to give you the financial controls needed to protect that margin."</p>
                     </div>
                 </div>
-            </details>
-
-             <details class="objection-accordion">
-                <summary><h4>"SuiteProcurement is included, Gatekeeper costs extra."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "True, but incomplete procurement is far more expensive. Gatekeeper typically identifies 17% in recoverable spend—that's $170K per million. We don't just cost money, we pay for ourselves, guaranteed."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/59hb9qqyr2.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_59hb9qqyr2 audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                <div class="card">
+                    <h3 class="card-title">The Team Overload Objection</h3>
+                    <p><strong>What they say:</strong> "My team is stretched thin. We don't have the bandwidth for another complex implementation or a new system to learn."</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Your Strategic Response:</strong> "That's the most common concern we hear, and it's why we've designed our solution differently. This isn't a 12-month transformation project. We're live in six weeks, and because we integrate directly into NetSuite, your team doesn't have to learn a new system. We actually give your team bandwidth back by automating the manual fire drills that are consuming their time today."</p>
                     </div>
                 </div>
-            </details>
-
-            <details class="objection-accordion">
-                <summary><h4>"NetSuite should do everything."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "NetSuite is an amazing foundation, but even Oracle partners with specialists. That's why we've built an ecosystem - NetSuite for transactions, Gatekeeper for intelligence, Tipalti for payments, Airbase for spend. Best-in-class at each layer, all working as one."</p>
-                     <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/a2uqdg8mpw.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_a2uqdg8mpw audio=true" style="height:40px; width:100%;">&nbsp;</div>
+                 <div class="card">
+                    <h3 class="card-title">The "We're Covered" Objection</h3>
+                    <p><strong>What they say:</strong> "Our procurement and legal teams are on top of this. I think we have it handled."</p>
+                     <div class="highlight-box" style="margin-top: 1rem;">
+                        <p><strong>Your Strategic Response:</strong> "That's a great sign of a strong team. The challenge isn't whether they're doing their jobs; it's the tools they're using. The best procurement leader can't see the risk hidden in a contract if it's in a separate system from the spend data in NetSuite. We provide the connective tissue—the intelligence that allows your skilled teams to see the full picture."</p>
                     </div>
                 </div>
-            </details>
-
-            <details class="objection-accordion">
-                <summary><h4>"We're concerned about AI security/We can't use AI."</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "That's exactly why we're moving LuminIQ to Amazon Bedrock this September. Your data NEVER leaves your region - complete data sovereignty. We use Anthropic's Claude (not OpenAI), the same AI that powers major enterprises' secure operations. Your data stays exactly where you need it for compliance. Plus, you can turn AI features on or off at any time."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/st3pkrmqkk.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_st3pkrmqkk audio=true" style="height:40px; width:100%;">&nbsp;</div>
-                    </div>
-                </div>
-            </details>
-
-            <details class="objection-accordion">
-                <summary><h4>"How is your AI different from NetSuite's new AI features?"</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "Great question! NetSuite's AI focuses on processing transactions faster. LuminIQ is fundamentally different - it's intelligence AI, not automation AI. We predict vendor risks, identify contract violations, and surface savings opportunities you didn't know existed. Our AI works across your entire ecosystem - NetSuite, Tipalti, Airbase - not just in one system."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/k321rkckpx.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_k321rkckpx audio=true" style="height:40px; width:100%;">&nbsp;</div>
-                    </div>
-                </div>
-            </details>
-
-             <details class="objection-accordion">
-                <summary><h4>"Everyone claims to have AI - what makes yours real?"</h4></summary>
-                <div class="objection-response">
-                    <p><strong>✅ Your Response:</strong> "Fair skepticism! Most 'AI' is just marketing spin. LuminIQ is different - it's not about magic. It's about connecting intelligence across your vendor ecosystem. When a risk flag appears, it automatically flows into contract terms. When spend patterns change, it triggers compliance reviews. That's connected intelligence, not just automation. Our clients typically see 17% vendor spend reduction, 73% fewer compliance issues & 3X ROI within the first year."</p>
-                    <div style="margin-top: 1rem;">
-                        <script src="https://fast.wistia.com/embed/medias/wcxbbakcv5.jsonp" async></script>
-                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                        <div class="wistia_embed wistia_async_wcxbbakcv5 audio=true" style="height:40px; width:100%;">&nbsp;</div>
-                    </div>
-                </div>
-            </details>
+            </div>
             
         </main>
     </div>
@@ -224,3 +254,4 @@
     </script>
 </body>
 </html>
+
